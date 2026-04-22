@@ -9,7 +9,7 @@ namespace Assets._Project.Scripts.Saving
     {
         public int coins;
         public List<bool> unlockedSlots; // true - открыт, false - закрыт
-        public List<InventorySlotData> slots;
+        public List<InventorySlotData> items;
     }
 
     [Serializable]
