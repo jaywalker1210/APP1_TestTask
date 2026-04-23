@@ -33,3 +33,5 @@
 *.apk
 *.aab
 *.exe
+
+.vs/

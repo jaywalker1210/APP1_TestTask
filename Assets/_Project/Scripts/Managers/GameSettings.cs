@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameSettings", menuName = "Roguelike/GameSettings")]
@@ -10,5 +12,15 @@ public class GameSettings : ScriptableObject
     public int slotsPerRow = 5;
 
     [Header("Стоимость разблокировки слота")]
-    public int slotUnlockCost = 50;
+    public int[] slotUnlockCost;
+
+    public int GetSlotUnlockCost(int slotIndex)
+    {
+        if (slotUnlockCost != null && slotIndex < slotUnlockCost.Length)
+        {
+            return slotUnlockCost[slotIndex];
+        }
+
+        return 50;
+    }
 }

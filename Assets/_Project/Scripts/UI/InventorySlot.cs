@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,7 +21,7 @@ namespace Assets._Project.Scripts.UI
 
         public int SlotIndex { get; set; }
         public bool IsUnlocked { get; private set; }
-        private InventoryManager inventoryManager; // нужен DI
+        private InventoryManager inventoryManager; // DI
 
         public InventoryItem currentItem;
 
@@ -32,18 +33,16 @@ namespace Assets._Project.Scripts.UI
 
             UpdateVisual();
 
-            // Добавляем слушатель на кнопку (она должна быть на корневом InventorySlot)
             Button btn = GetComponent<Button>();
             if (btn != null) btn.onClick.AddListener(OnSlotClick);
         }
 
+
         public void UpdateVisual()
         {
-            // Показываем нужную панель
             if (unlockOverlay != null) unlockOverlay.SetActive(IsUnlocked);
             if (lockOverlay != null) lockOverlay.SetActive(!IsUnlocked);
 
-            // Если слот открыт — обновляем предметы
             if (IsUnlocked)
             {
                 var item = inventoryManager?.GetItemInSlot(SlotIndex);
@@ -56,18 +55,48 @@ namespace Assets._Project.Scripts.UI
                         icon.gameObject.SetActive(true);
                     }
                     if (amountText != null)
-                        amountText.text = item.amount > 1 ? item.amount.ToString() : "";
+                    {
+                        if (item.amount > 1)
+                        {
+                            amountText.text = item.amount.ToString();
+                            amountText.gameObject.SetActive(true);
+
+                            if (amountText.transform.parent != null)
+                            {
+                                amountText.transform.parent.gameObject.SetActive(true);
+                            } 
+                        }
+                        else
+                        {
+                            amountText.text = "";
+                            amountText.gameObject.SetActive(false);
+
+                            if (amountText.transform.parent != null)
+                                amountText.transform.parent.gameObject.SetActive(false);
+                        }
+                    }
+                        
                 }
                 else
                 {
                     if (icon != null) icon.gameObject.SetActive(false);
-                    if (amountText != null) amountText.text = "";
+                    if (amountText != null)
+                    {
+                        amountText.text = "";
+                        amountText.gameObject.SetActive(false);
+
+                        if (amountText.transform.parent != null)
+                            amountText.transform.parent.gameObject.SetActive(false);
+                    }
                 }
             }
-            else // Если слот закрыт — показываем стоимость
+            else
             {
                 if (costText != null && inventoryManager.gameSettings != null)
-                    costText.text = inventoryManager.gameSettings.slotUnlockCost.ToString();
+                {
+                    int currentCost = inventoryManager.gameSettings.GetSlotUnlockCost(SlotIndex);
+                    costText.text = currentCost.ToString();
+                }
             }
         }
 
@@ -75,6 +104,7 @@ namespace Assets._Project.Scripts.UI
         {
             if (!IsUnlocked)
             {
+                UpdateVisual();
                 inventoryManager.TryUnlockSlot(SlotIndex);
             }
             else
@@ -94,5 +124,7 @@ namespace Assets._Project.Scripts.UI
         {
             return currentItem;
         }
+
+
     }
 }

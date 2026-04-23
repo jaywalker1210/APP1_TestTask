@@ -54,7 +54,7 @@ public class UIManager : MonoBehaviour
     public void UpdateWeightUI(float weight)
     {
         if (weightText != null)
-            weightText.text = $"Вес: {weight.ToString("F3")}";
+            weightText.text = $"Вес: {weight.ToString("0.###")}";
     }
 
     private void OnShootButtonClick()

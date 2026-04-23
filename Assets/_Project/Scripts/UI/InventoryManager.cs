@@ -14,15 +14,15 @@ namespace Assets._Project.Scripts.UI
         public GameSettings gameSettings;
 
         [Header("Item Lists (drag & drop .asset files here)")]
-        public List<WeaponData> weapons = new List<WeaponData>();
-        public List<ArmorData> armors = new List<ArmorData>();
-        public List<AmmoData> ammoTypes = new List<AmmoData>();
+        public List<WeaponData> weapons = new List<WeaponData>(); // DI
+        public List<ArmorData> armors = new List<ArmorData>(); // DI
+        public List<AmmoData> ammoTypes = new List<AmmoData>(); // DI
 
         [Header("State")]
         public List<InventorySlot> slots = new List<InventorySlot>();
 
         private float totalWeight;
-        private GameManager gameManager; // нужен DI?
+        private GameManager gameManager; // DI
 
         public float TotalWeight => totalWeight;
 
@@ -52,7 +52,13 @@ namespace Assets._Project.Scripts.UI
             if (slotIndex < 0 || slotIndex >= slots.Count) return;
             if (slots[slotIndex].IsUnlocked) return;
 
-            int cost = gameSettings.slotUnlockCost;
+            if (slotIndex > 0 && !slots[slotIndex - 1].IsUnlocked)
+            {
+                Debug.Log($"Нельзя разблокировать слот {slotIndex}, пока не разблокирован слот {slotIndex - 1}");
+                return;
+            }
+
+            int cost = gameSettings.GetSlotUnlockCost(slotIndex);
             if (gameManager.SpendCoins(cost))
             {
                 slots[slotIndex].SetUnlocked(true);

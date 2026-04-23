@@ -7,8 +7,8 @@ namespace Assets._Project.Scripts.Managers
     public class GameManager : MonoBehaviour
     {
         [Header("References")]
-        public InventoryManager inventoryManager;
-        public UIManager uiManager;
+        public InventoryManager inventoryManager; // DI
+        public UIManager uiManager; // DI
 
         [Header("Player Data")]
         public int coins;
