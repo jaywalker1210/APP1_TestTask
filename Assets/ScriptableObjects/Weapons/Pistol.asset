@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Pistol
   id: Pistol
-  type: 2
   icon: {fileID: 21300000, guid: b3e0156fc298748fd817ca14f833f3c5, type: 3}
   weight: 1
   maxStack: 1
   damage: 10
-  ammoId: PistolAmmo
+  compatibleAmmoIds:
+  - {fileID: 11400000, guid: 97eb224257eecf047bdc5b99377ed473, type: 2}

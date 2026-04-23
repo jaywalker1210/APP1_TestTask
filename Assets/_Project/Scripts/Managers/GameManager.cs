@@ -24,7 +24,6 @@ namespace Assets._Project.Scripts.Managers
         public void AddCoins(int amount)
         {
             coins += amount;
-            Debug.Log($"Добавлено {amount} монет. Всего: {coins}");
             SaveGame();
             UpdateCoinsUI();
         }
@@ -50,7 +49,7 @@ namespace Assets._Project.Scripts.Managers
         {
             int randomCoins = Random.Range(9, 100); // от 9 до 99 включительно
             AddCoins(randomCoins);
-            Debug.Log($"Добавлено {randomCoins} монет");
+            Debug.Log($"Добавлено ({randomCoins}) монет");
         }
 
         private void UpdateCoinsUI()

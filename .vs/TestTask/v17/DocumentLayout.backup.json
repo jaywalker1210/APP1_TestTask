@@ -3,48 +3,56 @@
   "WorkspaceRootPath": "D:\\unity_projects\\TestTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\ui\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\ui\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|d:\\unity_projects\\testtask\\assets\\_project\\scripts\\ui\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\ui\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\saving\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\saving\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\saving\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\saving\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|d:\\unity_projects\\testtask\\assets\\_project\\scripts\\data\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\data\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\data\\armordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\data\\armordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\data\\ammodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\data\\ammodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\ui\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\ui\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\data\\weapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\data\\weapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\data\\itemtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\data\\itemtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\ui\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\ui\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\data\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\data\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\intefaces\\ishootableweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\intefaces\\ishootableweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\data\\ammodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\data\\ammodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\intefaces\\iaddableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\intefaces\\iaddableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\intefaces\\iaddableammo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\intefaces\\iaddableammo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\saving\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\saving\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\saving\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\saving\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED558555-7CFE-1154-77C4-81942055D01A}|Assembly-CSharp.csproj|D:\\unity_projects\\TestTask\\assets\\_project\\scripts\\managers\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,59 +74,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InventoryManager.cs",
-              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\InventoryManager.cs",
-              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\UI\\InventoryManager.cs",
-              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\InventoryManager.cs",
-              "RelativeToolTip": "Assets\\_Project\\Scripts\\UI\\InventoryManager.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAhwFwAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ItemData.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ItemData.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Data\\ItemData.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ItemData.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Data\\ItemData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T20:09:33.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UIManager.cs",
-              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\UIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\UI\\UIManager.cs",
-              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\UIManager.cs",
-              "RelativeToolTip": "Assets\\_Project\\Scripts\\UI\\UIManager.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwF0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T20:07:33.864Z",
+              "WhenOpened": "2026-04-22T09:42:14.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InventorySlot.cs",
-              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\InventorySlot.cs",
-              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\UI\\InventorySlot.cs",
-              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\InventorySlot.cs",
-              "RelativeToolTip": "Assets\\_Project\\Scripts\\UI\\InventorySlot.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
+              "Title": "ArmorData.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ArmorData.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Data\\ArmorData.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ArmorData.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Data\\ArmorData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T20:07:23.591Z",
+              "WhenOpened": "2026-04-22T10:03:48.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
-              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
-              "RelativeToolTip": "Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAIA5wEQAAAANAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AmmoData.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\AmmoData.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Data\\AmmoData.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\AmmoData.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Data\\AmmoData.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T10:31:13.625Z",
+              "WhenOpened": "2026-04-22T09:49:42.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "IAddableItem.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Intefaces\\IAddableItem.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Intefaces\\IAddableItem.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Intefaces\\IAddableItem.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Intefaces\\IAddableItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T09:23:07.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeaponData.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\WeaponData.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Data\\WeaponData.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\WeaponData.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Data\\WeaponData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:46:53.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "SaveSystem.cs",
               "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Saving\\SaveSystem.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Saving\\SaveSystem.cs",
@@ -131,6 +151,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "InventoryManager.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\InventoryManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\UI\\InventoryManager.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\InventoryManager.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\UI\\InventoryManager.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAgwCABAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T20:09:33.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\UI\\UIManager.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\UIManager.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\UI\\UIManager.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowE4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T20:07:33.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InventorySlot.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\InventorySlot.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\UI\\InventorySlot.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\UI\\InventorySlot.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\UI\\InventorySlot.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T20:07:23.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAApwDMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T10:31:13.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAddableAmmo.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Intefaces\\IAddableAmmo.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Intefaces\\IAddableAmmo.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Intefaces\\IAddableAmmo.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Intefaces\\IAddableAmmo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T09:23:56.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "SaveData.cs",
               "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Saving\\SaveData.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Saving\\SaveData.cs",
@@ -138,24 +222,23 @@
               "RelativeToolTip": "Assets\\_Project\\Scripts\\Saving\\SaveData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T10:20:38.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T10:20:38.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ArmorData.cs",
-              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ArmorData.cs",
-              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Data\\ArmorData.cs",
-              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ArmorData.cs",
-              "RelativeToolTip": "Assets\\_Project\\Scripts\\Data\\ArmorData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "IShootableWeapon.cs",
+              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Intefaces\\IShootableWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Intefaces\\IShootableWeapon.cs",
+              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Intefaces\\IShootableWeapon.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Intefaces\\IShootableWeapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T10:03:48.099Z"
+              "WhenOpened": "2026-04-23T09:25:07.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "GameSettings.cs",
               "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Managers\\GameSettings.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Managers\\GameSettings.cs",
@@ -164,54 +247,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-22T09:53:20.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AmmoData.cs",
-              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\AmmoData.cs",
-              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Data\\AmmoData.cs",
-              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\AmmoData.cs",
-              "RelativeToolTip": "Assets\\_Project\\Scripts\\Data\\AmmoData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T09:49:42.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WeaponData.cs",
-              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\WeaponData.cs",
-              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Data\\WeaponData.cs",
-              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\WeaponData.cs",
-              "RelativeToolTip": "Assets\\_Project\\Scripts\\Data\\WeaponData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T09:46:53.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ItemData.cs",
-              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ItemData.cs",
-              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Data\\ItemData.cs",
-              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ItemData.cs",
-              "RelativeToolTip": "Assets\\_Project\\Scripts\\Data\\ItemData.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T09:42:14.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ItemType.cs",
-              "DocumentMoniker": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ItemType.cs",
-              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Data\\ItemType.cs",
-              "ToolTip": "D:\\unity_projects\\TestTask\\Assets\\_Project\\Scripts\\Data\\ItemType.cs",
-              "RelativeToolTip": "Assets\\_Project\\Scripts\\Data\\ItemType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T09:36:47.824Z"
             }
           ]
         }

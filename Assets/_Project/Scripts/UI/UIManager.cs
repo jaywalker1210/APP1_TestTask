@@ -18,10 +18,12 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI weightText;
 
     [Header("Inventory")]
-    public InventoryManager inventoryManager;
+    public InventoryManager inventoryManager; // нужен DI
 
     void Start()
     {
+        // здесь тоже нужен DI? или привязка кнопок таким способом нормальная практика?
+
         // Привязываем кнопки
         if (shootButton != null)
             shootButton.onClick.AddListener(OnShootButtonClick);
@@ -46,41 +48,35 @@ public class UIManager : MonoBehaviour
     public void UpdateCoinsUI(int coins)
     {
         if (coinsText != null)
-            coinsText.text = coins.ToString();
+            coinsText.text = $"Монеты: {coins.ToString()}";
     }
 
     public void UpdateWeightUI(float weight)
     {
         if (weightText != null)
-            weightText.text = weight.ToString("F3");
+            weightText.text = $"Вес: {weight.ToString("F3")}";
     }
-
-    // --- Обработчики кнопок (пока заглушки, потом допишешь) ---
 
     private void OnShootButtonClick()
     {
-        Debug.Log("Выстрел");
         if (inventoryManager != null)
             inventoryManager.Shoot();
     }
 
     private void OnAddAmmoButtonClick()
     {
-        Debug.Log("Добавить патроны");
         if (inventoryManager != null)
             inventoryManager.AddRandomAmmo();
     }
 
     private void OnAddItemButtonClick()
     {
-        Debug.Log("Добавить предмет");
         if (inventoryManager != null)
             inventoryManager.AddRandomItem();
     }
 
     private void OnRemoveItemButtonClick()
     {
-        Debug.Log("Удалить предмет");
         if (inventoryManager != null)
             inventoryManager.RemoveRandomItem();
     }

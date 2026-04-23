@@ -20,7 +20,7 @@ namespace Assets._Project.Scripts.UI
 
         public int SlotIndex { get; set; }
         public bool IsUnlocked { get; private set; }
-        private InventoryManager inventoryManager;
+        private InventoryManager inventoryManager; // нужен DI
 
         public InventoryItem currentItem;
 
