@@ -14,15 +14,15 @@ namespace Assets._Project.Scripts.UI
         public GameSettings gameSettings;
 
         [Header("Item Lists (drag & drop .asset files here)")]
-        public List<WeaponData> weapons = new List<WeaponData>(); // DI
-        public List<ArmorData> armors = new List<ArmorData>(); // DI
-        public List<AmmoData> ammoTypes = new List<AmmoData>(); // DI
+        public List<WeaponData> weapons = new List<WeaponData>();
+        public List<ArmorData> armors = new List<ArmorData>();
+        public List<AmmoData> ammoTypes = new List<AmmoData>();
 
         [Header("State")]
         public List<InventorySlot> slots = new List<InventorySlot>();
 
         private float totalWeight;
-        private GameManager gameManager; // DI
+        private GameManager gameManager;
 
         public float TotalWeight => totalWeight;
 
@@ -30,6 +30,12 @@ namespace Assets._Project.Scripts.UI
         {
             gameManager = FindObjectOfType<GameManager>();
             InitializeInventory();
+            LoadInventory();
+        }
+
+        private void OnApplicationQuit()
+        {
+            SaveInventory();
         }
 
         void InitializeInventory()
@@ -286,15 +292,120 @@ namespace Assets._Project.Scripts.UI
             Debug.Log($"Удалено ({amountRemoved}) {itemName} из слота: {randomSlot}");
         }
 
-        public List<InventorySlotData> GetItemsForSave()
+        public void SaveInventory()
         {
-            // TODO: сохранить предметы
-            return new List<InventorySlotData>();
+            SaveData data = new SaveData();
+            data.unlockedSlots = GetUnlockedSlotsList();
+            data.items = GetItemsForSave();
+            SaveSystem.SaveInventory(data);
+            Debug.Log("Инвентарь сохранён");
         }
 
+        public void LoadInventory()
+        {
+            SaveData data = SaveSystem.LoadInventory();
+            if (data != null)
+            {
+                LoadFromSave(data);
+                Debug.Log("Инвентарь загружен");
+            }
+            else
+            {
+                Debug.Log("Нет сохранения инвентаря. Начинаем с нуля.");
+            }
+        }
+
+        // Получить список открытых слотов
+        private List<bool> GetUnlockedSlotsList()
+        {
+            List<bool> unlocked = new List<bool>();
+            foreach (var slot in slots)
+            {
+                unlocked.Add(slot.IsUnlocked);
+            }
+            return unlocked;
+        }
+
+        // Получить список предметов для сохранения
+        public List<InventorySlotData> GetItemsForSave()
+        {
+            List<InventorySlotData> saveItems = new List<InventorySlotData>();
+            for (int i = 0; i < slots.Count; i++)
+            {
+                var item = slots[i].GetCurrentItem();
+                if (item != null && item.itemData != null)
+                {
+                    saveItems.Add(new InventorySlotData
+                    {
+                        itemId = item.itemData.id,
+                        amount = item.amount,
+                        slotIndex = i
+                    });
+                }
+            }
+            return saveItems;
+        }
+
+        // Загрузить данные из SaveData
         public void LoadFromSave(SaveData data)
         {
-            // TODO: загрузить предметы
+            // Очищаем инвентарь
+            foreach (var slot in slots)
+            {
+                slot.currentItem = null;
+            }
+
+            // Восстанавливаем предметы
+            if (data.items != null)
+            {
+                foreach (var savedItem in data.items)
+                {
+                    ItemData itemData = FindItemById(savedItem.itemId);
+                    if (itemData != null && savedItem.slotIndex < slots.Count)
+                    {
+                        slots[savedItem.slotIndex].currentItem = new InventoryItem
+                        {
+                            itemData = itemData,
+                            amount = savedItem.amount
+                        };
+                        slots[savedItem.slotIndex].UpdateVisual();
+                    }
+                }
+            }
+
+            // Восстанавливаем состояние слотов
+            if (data.unlockedSlots != null)
+            {
+                for (int i = 0; i < data.unlockedSlots.Count && i < slots.Count; i++)
+                {
+                    if (data.unlockedSlots[i] && !slots[i].IsUnlocked)
+                    {
+                        slots[i].SetUnlocked(true);
+                    }
+                }
+            }
+
+            UpdateTotalWeight();
+            Debug.Log("Инвентарь восстановлен из сохранения");
+        }
+
+        // Поиск предмета по id
+        private ItemData FindItemById(string id)
+        {
+            if (weapons != null)
+                foreach (var w in weapons)
+                    if (w.id == id) return w;
+
+            if (armors != null)
+                foreach (var a in armors)
+                    if (a.id == id) return a;
+
+            if (ammoTypes != null)
+                foreach (var a in ammoTypes)
+                    if (a.id == id) return a;
+
+            Debug.LogWarning($"Предмет с id '{id}' не найден!");
+            return null;
         }
     }
 
