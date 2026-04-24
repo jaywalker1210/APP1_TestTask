@@ -315,7 +315,6 @@ namespace Assets._Project.Scripts.UI
             }
         }
 
-        // Получить список открытых слотов
         private List<bool> GetUnlockedSlotsList()
         {
             List<bool> unlocked = new List<bool>();
@@ -326,7 +325,6 @@ namespace Assets._Project.Scripts.UI
             return unlocked;
         }
 
-        // Получить список предметов для сохранения
         public List<InventorySlotData> GetItemsForSave()
         {
             List<InventorySlotData> saveItems = new List<InventorySlotData>();
@@ -346,16 +344,13 @@ namespace Assets._Project.Scripts.UI
             return saveItems;
         }
 
-        // Загрузить данные из SaveData
         public void LoadFromSave(SaveData data)
         {
-            // Очищаем инвентарь
             foreach (var slot in slots)
             {
                 slot.currentItem = null;
             }
 
-            // Восстанавливаем предметы
             if (data.items != null)
             {
                 foreach (var savedItem in data.items)
@@ -373,7 +368,6 @@ namespace Assets._Project.Scripts.UI
                 }
             }
 
-            // Восстанавливаем состояние слотов
             if (data.unlockedSlots != null)
             {
                 for (int i = 0; i < data.unlockedSlots.Count && i < slots.Count; i++)
@@ -389,7 +383,6 @@ namespace Assets._Project.Scripts.UI
             Debug.Log("Инвентарь восстановлен из сохранения");
         }
 
-        // Поиск предмета по id
         private ItemData FindItemById(string id)
         {
             if (weapons != null)
@@ -406,6 +399,67 @@ namespace Assets._Project.Scripts.UI
 
             Debug.LogWarning($"Предмет с id '{id}' не найден!");
             return null;
+        }
+
+        public void SwapOrDragItems(int fromSlot, int toSlot)
+        {
+            if (fromSlot < 0 || fromSlot >= slots.Count) return;
+            if (toSlot < 0 || toSlot >= slots.Count) return;
+
+            InventoryItem fromItem = slots[fromSlot].currentItem;
+            InventoryItem toItem = slots[toSlot].currentItem;
+
+            if (fromItem == null && toItem == null) return;
+
+            if (toItem == null)
+            {
+                slots[toSlot].currentItem = new InventoryItem
+                {
+                    itemData = fromItem.itemData,
+                    amount = fromItem.amount
+                };
+                slots[fromSlot].currentItem = null;
+
+                slots[fromSlot].UpdateVisual();
+                slots[toSlot].UpdateVisual();
+                UpdateTotalWeight();
+                return;
+            }
+            if (fromItem.itemData.id == toItem.itemData.id && fromItem.itemData.maxStack > 1)
+            {
+                int totalAmount = fromItem.amount + toItem.amount;
+                int maxStack = fromItem.itemData.maxStack;
+
+                if (totalAmount <= maxStack)
+                {
+                    toItem.amount = totalAmount;
+                    slots[fromSlot].currentItem = null;
+                }
+                else
+                {
+                    toItem.amount = maxStack;
+                    fromItem.amount = totalAmount - maxStack;
+                }
+
+                slots[fromSlot].UpdateVisual();
+                slots[toSlot].UpdateVisual();
+                UpdateTotalWeight();
+                return;
+            }
+            slots[toSlot].currentItem = new InventoryItem
+            {
+                itemData = fromItem.itemData,
+                amount = fromItem.amount
+            };
+            slots[fromSlot].currentItem = new InventoryItem
+            {
+                itemData = toItem.itemData,
+                amount = toItem.amount
+            };
+
+            slots[fromSlot].UpdateVisual();
+            slots[toSlot].UpdateVisual();
+            UpdateTotalWeight();
         }
     }
 

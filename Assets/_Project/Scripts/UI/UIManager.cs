@@ -1,4 +1,5 @@
-﻿using Assets._Project.Scripts.Managers;
+﻿using Assets._Project.Scripts.Data;
+using Assets._Project.Scripts.Managers;
 using Assets._Project.Scripts.UI;
 using TMPro;
 using UnityEngine;
@@ -18,13 +19,15 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI weightText;
 
     [Header("Inventory")]
-    public InventoryManager inventoryManager; // нужен DI
+    public InventoryManager inventoryManager;
+
+    [Header("Tooltip")]
+    public GameObject tooltipPanel;
+    public TextMeshProUGUI tooltipNameText;
+    public TextMeshProUGUI tooltipInfoText;
 
     void Start()
     {
-        // здесь тоже нужен DI? или привязка кнопок таким способом нормальная практика?
-
-        // Привязываем кнопки
         if (shootButton != null)
             shootButton.onClick.AddListener(OnShootButtonClick);
 
@@ -40,9 +43,11 @@ public class UIManager : MonoBehaviour
         if (addCoinsButton != null)
             addCoinsButton.onClick.AddListener(OnAddCoinsButtonClick);
 
-        // Находим InventoryManager, если не привязан
         if (inventoryManager == null)
             inventoryManager = FindObjectOfType<InventoryManager>();
+
+        if (tooltipPanel != null)
+            tooltipPanel.SetActive(false);
     }
 
     public void UpdateCoinsUI(int coins)
@@ -86,5 +91,20 @@ public class UIManager : MonoBehaviour
         GameManager gm = FindObjectOfType<GameManager>();
         if (gm != null)
             gm.AddRandomCoins();
+    }
+
+    public void ShowTooltip(ItemData item, int amount)
+    {
+        if (tooltipPanel == null) return;
+
+        tooltipNameText.text = item.itemName;
+        tooltipInfoText.text = item.GetDescription(amount);
+        tooltipPanel.SetActive(true);
+    }
+
+    public void HideTooltip()
+    {
+        if (tooltipPanel != null)
+            tooltipPanel.SetActive(false);
     }
 }
